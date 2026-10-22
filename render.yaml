@@ -1,0 +1,19 @@
+# Render blueprint: FastAPI backend (Docker) + React frontend (static site).
+# Deploy via Render Dashboard -> New -> Blueprint, or create the two
+# services manually with these settings.
+services:
+  - type: web
+    name: realtime-chat-app-api
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+
+  - type: web
+    name: realtime-chat-app-web
+    env: static
+    plan: free
+    buildCommand: "cd frontend && npm install && npm run build"
+    staticPublishPath: ./frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        value: "https://realtime-chat-app-api.onrender.com"
