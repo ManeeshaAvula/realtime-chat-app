@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f6f1e7; color: #243028; }
+main { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+h1 { font-family: Georgia, serif; margin: 0 0 4px; }
+.sub { color: #5c6a5e; margin-top: 0; }
+label { display: block; margin: 14px 0 4px; font-weight: 600; }
+input { width: 100%; padding: 10px; border: 1px solid #b9c2b4; border-radius: 6px; background: #fffdf8; }
+button { margin-top: 16px; padding: 10px 20px; border: 1px solid #47624a; background: #5f7d5f; color: #fff; border-radius: 6px; cursor: pointer; }
+button.link { background: none; border: none; color: #47624a; padding: 0; margin: 0; text-decoration: underline; }
+.error { color: #a33b2e; }
+.room-list ul, .members ul { list-style: none; padding: 0; }
+.room-list li { display: flex; gap: 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid #ddd3c0; }
+.chat header { display: flex; gap: 16px; align-items: baseline; border-bottom: 2px solid #47624a; padding-bottom: 8px; }
+.chat .body { display: flex; gap: 20px; margin-top: 12px; }
+.messages { flex: 1; min-height: 320px; }
+.messages p { margin: 8px 0; }
+.messages .mine { text-align: right; }
+.messages .system { text-align: center; color: #7a6f5c; font-style: italic; }
+.members { width: 180px; border-left: 1px solid #ddd3c0; padding-left: 16px; }
+.chat footer { display: flex; gap: 10px; margin-top: 12px; }
+.chat footer input { flex: 1; }
+.chat footer button { margin-top: 0; }
+time { color: #8a7f6a; font-size: 0.8em; }
